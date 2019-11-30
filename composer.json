@@ -1,0 +1,33 @@
+{
+	"name" : "project_ickx/php_for_everyone",
+	"description" : "PHPforEveryone Chapter 7.3 Sample",
+	"type" : "library",
+	"homepage" : "https://gihyo.jp/book/2019/978-4-297-11055-0",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "akira wakaba",
+			"homepage" : "https://ickx.jp",
+			"role" : "PHPforEveryone Chapter 7.3 writer"
+		}
+	],
+	"config": {
+		"autoloader-suffix": "PHPforEveryoneStreams"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"project_ickx\\php_for_everyone\\" : "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4" : {
+			"project_ickx\\php_for_everyone\\tests\\" : "tests"
+		}
+	},
+	"keywords" : [
+		"PHPforEveryone stream filter library sample"
+	],
+	"require" : {
+		"php": ">=5.3.3",
+		"ext-mbstring" : "*"
+	}
+}
